@@ -72,10 +72,7 @@ return [
             'model' => App\Models\User::class,
         ],
 
-        'admins' => [  // Custom provider untuk admin
-        'driver' => 'eloquent',
-        'model' => App\Models\Admin::class,
-    ],
+        
     ],
 
     /*

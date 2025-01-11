@@ -3,19 +3,23 @@
 use App\Http\Controllers\DosenController;
 use App\Http\Controllers\MahasiswaController;
 use App\Http\Controllers\MataKuliahController;
-use App\Http\Controllers\AdminController;
-use App\Http\Controllers\HomepageController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\FacilityController;
+use App\Http\Controllers\UKMController;
+use App\Http\Controllers\RegistrationController;
 use Illuminate\Support\Facades\Route;
 
 
-Route::prefix('admin')->group(function () {
-    Route::get('dashboard', [AdminController::class, 'dashboard'])->middleware('auth:admin');
-    Route::get('login', [AdminController::class, 'login']);
-    Route::post('authenticate', [AdminController::class, 'authenticate'])->name('admin.authenticate');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::resource('ukms', UKMController::class)->only(['index', 'show']);
+Route::resource('facilities', FacilityController::class);
+Route::resource('about', AboutController::class)->only(['index']);
+Route::resource('registrations', RegistrationController::class)
+    ->only(['create', 'store'])
+    ->name('create', 'registrations.create')
+    ->name('store', 'registrations.store');
 
-    Route::resource('mahasiswa', MahasiswaController::class);
-    Route::resource('dosen', DosenController::class);
-    Route::resource('mata-kuliah', MataKuliahController::class);
-});
-Route::get('/', [HomepageController::class, 'index'])->name('homepage');
+
+    
 
