@@ -11,6 +11,9 @@
     <h2 class="text-2xl font-bold mb-4">{{ $about->title }}</h2>
     <!-- Menampilkan gambar dari database -->
     <img src="{{ asset($about->image) }}" alt="{{ $about->title }}" class="w-full h-80 object-cover rounded-lg mb-6 shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out">
-    <p class="text-green-600">{{ $about->content }}</p>
+    <p class="text-green-600 leading-relaxed text-base bg-green-50 p-4 rounded-lg shadow-md">
+    {{ $about->content }}
+</p>
+
 </div>
 @endsection
