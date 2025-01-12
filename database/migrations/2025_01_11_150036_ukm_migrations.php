@@ -12,11 +12,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('ukm_migrations', function (Blueprint $table) {
+        Schema::create('ukm', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_ukm');
+            $table->string('nama');
             $table->string('nama_ketua');
             $table->string('angkatan');
+            $table->string('image');
             $table->timestamps();
         });
     }

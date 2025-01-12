@@ -23,6 +23,7 @@ Dalam Perkembangan selanjutnya setelah KH. Ruhiat wafat (1931-1977), perjuangan 
 STT Cipasung didirikan pada tahun 1997, melengkapi lembaga-lembaga pendidikan yang sudah ada di lingkungan Pondok Pesantren Cipasung, mulai dari Paud, TK, MI, SMPI, MTs, SMAI, MAN, dan IAIC.
 
 Pemrakarsa utama berdirinya Sekolah Tinggi Teknologi Cipasung adalah Drs. H. Abdul Chobir, MT atas anjuran Pimpinan Pondok Pesantren Cipasung pada masa itu, yaitu KH. Moh. Ilyas Ruhiat. Pendirian kampus ini, juga atas bantuan dan arahan dari tim Institut Teknologi Bandung, serta dorongan dari Prof. Dr. Ginanjar Kartasasmita dan Ir. Fadel Muhammad ketika melakukan kunjungan ke Pondok Pesantren Cipasung.',
+            'image' => 'storage/about.png',
         ]);
     }
 }
