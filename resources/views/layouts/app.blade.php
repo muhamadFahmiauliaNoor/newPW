@@ -27,5 +27,18 @@
     <div class="container mx-auto mt-8">
         @yield('content')
     </div>
+
+    <!-- Footer -->
+    <footer class="bg-green-700 text-white py-6 mt-12">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <p class="text-sm">© {{ date('Y') }} Sekolah Tinggi Teknologi Cipasung. All rights reserved.</p>
+            </div>
+            <div class="flex space-x-4">
+                <a href="#" class="text-white hover:text-green-300">Privacy Policy</a>
+                <a href="#" class="text-white hover:text-green-300">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
